@@ -10,6 +10,7 @@ Since S8BL only works in Roblox Studio at the moment, copy and paste the scripts
 
 Both LocalScripts and Scripts work when running S8BL
 
+## Changes
 ### v1
 August 14th, 2022
 
