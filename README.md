@@ -1,7 +1,7 @@
 # S8BL
 Welcome! This is a small passion project I call "S8BL" (pronounced like "Mabel", but with an S).
 
-S8BL, Sample 8-Bit Lua, is my first attempt at writing an 8-bit Operating System in Lua. Currently, S8BL is written in LuaU in order for it to run on the Roblox platform, but this will be changed in the future to run within a Linux environment.
+S8BL, Sample 8-Bit Lua, is my first attempt at writing an 8-bit Operating System in Lua. Currently, S8BL is written in LuaU in order for it to run on the Roblox platform. This will be changed in the future to run within a Linux environment.
 
 S8BL allows you two run its own shellcode, or use the compiler to write the shellcode in a language similar to Assembly.
 
