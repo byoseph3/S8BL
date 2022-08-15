@@ -15,3 +15,6 @@ Both LocalScripts and Scripts work when running S8BL
 August 14th, 2022
 
 S8BL is now released open source as a LuaU project.
+
+Hotfixes:
+- Halt instruction now fully works rather than segfaulting.
