@@ -295,13 +295,13 @@ local function je(...)
 end
 cpu["0x72"] = je
 
-local function halt()
+local function halt(...)
 	cpu["0x14"] = "01"
 end
 cpu["0xff"] = halt
 
 local function run()
-	while (dec(cpu["0x03"])+7 < string.len(memory)+1) or cpu["0x14"] == "01" do
+	while (dec(cpu["0x03"])+7 < string.len(memory)+1) and cpu["0x14"] ~= "01" do
 		local instruction = string.sub(memory, dec(cpu["0x03"]), dec(cpu["0x03"])+7)
 		--print(dec(cpu["0x03"]))
 		-- parse the code
@@ -366,7 +366,6 @@ function cpu.load(code)
 	
 	run()
 end
-
 
 setup()
 spawn(subClock)
